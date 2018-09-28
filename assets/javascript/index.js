@@ -10,8 +10,7 @@ function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
     if (windowWidth > screenSM) {
         document.getElementById("main").style.marginLeft = "250px";
-    }
-    else {
+    } else {
         document.querySelector('.page-background').style.filter = 'blur(4px)';
     }
 
@@ -20,10 +19,9 @@ function openNav() {
 /* Set the width of the side navigation to 0 */
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
-    if (windowWidth > screenSM){
+    if (windowWidth > screenSM) {
         document.getElementById("main").style.marginLeft = "0";
-    }
-    else {
+    } else {
         document.querySelector('.page-background').style.filter = 'blur(0px)';
     }
 }
@@ -79,18 +77,22 @@ let typeText = async function () {
 }
 
 
-let screenResized = function() {
+let screenResized = function () {
+    windowWidth = window.innerWidth;
+    windowHeight = window.innerHeight;
+
+    console.log(windowWidth);
+
     // check screen size;
     if (windowWidth > screenSM) {
         // document.querySelector('.sidenav').style.width = '250px';
         openNav();
-        console.log(document.querySelector('.sidenav .closebtn'));
+        // console.log(document.querySelector('.sidenav .closebtn'));
         // document.querySelector('.sidenav .closebtn').classList.add('hide');
         document.querySelector('.sidenav .closebtn').style.display = 'none';
         document.querySelector('.sidebar-toggle').classList.add('hide');
-        
-    }
-    else {
+
+    } else {
         closeNav();
         // document.querySelector('.sidenav .closebtn').classList.remove('hide');
         document.querySelector('.sidenav .closebtn').style.display = null;
@@ -102,6 +104,7 @@ let screenResized = function() {
 
 
 // EVENT LISTENERS
+window.onresize = screenResized;
 // document.querySelector('body').addEventListener('resize', screenResized);
 
 
@@ -109,5 +112,5 @@ let screenResized = function() {
 screenResized();
 setTimeout(typeText, 1000);
 
-console.log('Height: ' + window.innerHeight);
-console.log('Width: ' + window.innerWidth);
+// console.log('Height: ' + window.innerHeight);
+// console.log('Width: ' + window.innerWidth);

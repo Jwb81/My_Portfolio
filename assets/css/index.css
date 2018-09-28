@@ -7,7 +7,8 @@ html {
 /* The side navigation menu */
 .sidenav {
     padding: 0;
-    height: 100vh;
+    /* height: 100%; */
+    min-height: 100%;
     /* 100% Full-height */
     width: 0px;
     /* 0 width - change this with JavaScript */
@@ -38,6 +39,7 @@ html {
     display: block;
     transition: 0.3s;
 }
+
 .nav-links a {
     padding: 8px 8px 8px 8px;
 
@@ -56,6 +58,7 @@ html {
     display: inline-block;
 
 }
+
 .contact a {
     padding: 5px;
     font-size: 1.2em;
@@ -118,9 +121,7 @@ html {
     text-shadow: 3px 3px 5px #333;
 }
 
-.first-name {
-
-}
+.first-name {}
 
 .last-name {
     font-weight: 900;
@@ -147,6 +148,9 @@ html {
     color: white;
     font-size: 1.5em;
     transform: rotate(90deg);
+}
+.sidebar-toggle:hover {
+    cursor: pointer;
 }
 
 /* Position and style the close button (top right corner) */
@@ -195,15 +199,22 @@ html {
 
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (min-width: 1350px) {
+@media screen and (min-width: 769px) {
     .page-background {
-        background-image: url('../images/luke-gonzales-1074742-unsplash.jpg');
+        /* background-image: url('../images/dawn_river_mountains.jpg'); */
     }
 }
 
+@media screen and (min-width: 1350px) {
+    .page-background {
+        background-image: url('../images/white_dog_lake_mountains.jpg');
+    }
+}
+
+
 @media screen and (max-width: 768px) {
     #my-pic {
-        content:url('../images/beach_volleyball_small.png');
+        content: url('../images/beach_volleyball_small.png');
     }
 
     .first-name,
@@ -222,7 +233,17 @@ html {
     } */
 }
 
-@media screen and (max-height: 450px) {
+/* HEIGHT MEDIA QUERIES */
+@media screen and (max-height: 600px) {
+    .sidenav a {
+        font-size: .8em;
+    }
+    .sidenav {
+        width: 150px;
+    }
+}
+
+/* @media screen and (max-height: 450px) {
     .sidenav {
         padding-top: 15px;
     }
@@ -230,4 +251,6 @@ html {
     .sidenav a {
         font-size: 18px;
     }
-}
+} */
+
+
