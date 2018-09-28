@@ -8,7 +8,8 @@
     <title>Jason Barnett</title>
 
     <!-- styles -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC:400,900" rel="stylesheet">
     <link rel='stylesheet' href='assets/css/index.css'>
@@ -24,7 +25,7 @@
             <a href="./index.html">Home</a>
             <a href="#">About Me</a>
             <a href="#">Resume</a>
-            <a href="#">Portfolio</a>
+            <a href="./assets/html/portfolio.html">Portfolio</a>
         </div>
 
         <div class='sidenav-footer'>
@@ -67,7 +68,14 @@
     </div>
 
     <!-- scripts -->
+    <script src='assets/javascript/bundle.js'></script>
     <script src='assets/javascript/index.js'></script>
+
+    <script>
+        // Startup calls
+        screenResized();
+        setTimeout(typeText, 1000);
+    </script>
 </body>
 
 </html>

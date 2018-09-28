@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jason Barnett</title>
+
+    <!-- styles -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC:400,900" rel="stylesheet">
+    <link rel='stylesheet' href='../css/index.css'>
+</head>
+
+<body>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <!-- <img id='my-pic' src='assets/images/Laura_resized.png'> -->
+        <img id='my-pic' src='../images/beach_volleyball.JPG'>
+        <div class="nav-links">
+            <a href="../../index.html">Home</a>
+            <a href="#">About Me</a>
+            <a href="#">Resume</a>
+            <a href="#">Portfolio</a>
+        </div>
+
+        <div class='sidenav-footer'>
+            <div class="icons">
+                <a class='icons' target='_blank' href='https://github.com/Jwb81'><i class='fab fa-github-square'></i></a>
+                <a class='icons' target='_blank' href='https://www.linkedin.com/in/jason-w-barnett/'><i class='fab fa-linkedin'></i></a>
+                <!-- <a href='https://twitter.com/JBarnett2114'><i class='fab fa-twitter-square'></i></a> -->
+            </div>
+            <div class="contact">
+                <a href='tel:+13307057994'>(330)-705-7994</a>
+                <a href='mailto:jwb81@zips.uakron.edu'>Personal email</a>
+                <a href='mailto:jayb21@neo.rr.com'>School email</a>
+
+            </div>
+            <div class="copyright">
+                &copy; Jason Barnett 2018
+            </div>
+        </div>
+    </div>
+
+    <!-- page background : absolute positioning -->
+    <div class="page-background" style='transform: blur(5px)'></div>
+
+    <!-- Use any element to open the sidenav -->
+    <span class='sidebar-toggle' onclick="openNav()">|||</span>
+
+    <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+    <div id="main" class='flex-container'>
+
+        <div class="flex-item">
+            <div class="portfolio-cards">
+                <div class="pcard">
+                    <img class="pcard-image" src='../images/portfolio/bartender.jpg'>
+                    <div class="pcard-body">This is a private project right now.  It uses a web interface to allow users to make drinks on a machine.</div>
+                    <div class="pcard-footer">
+                        <a class='pcard-link' target='_blank' href='https://github.com/Castelobruxo/Lets_Go_Biking'>View
+                            Github</a>
+                        <a class='pcard-link' target='_blank' href='https://castelobruxo.github.io/Lets_Go_Biking/'>View
+                            Site</a>
+                    </div>
+                </div>
+                <div class="pcard">
+                    <img class="pcard-image" src='../images/portfolio/p4p_waterfall.jpg'>
+                    <div class="pcard-body">Dawn at the riverbed with mountains</div>
+                    <div class="pcard-footer">
+                        <a class='pcard-link' target='_blank' href='https://github.com/Castelobruxo/Lets_Go_Biking'>View
+                            Github</a>
+                        <a class='pcard-link' target='_blank' href='https://castelobruxo.github.io/Lets_Go_Biking/'>View
+                            Site</a>
+                    </div>
+                </div>
+                <div class="pcard">
+                    <img class="pcard-image" src='../images/portfolio/audi.jpg'>
+                    <div class="pcard-body">A simple hangman game that generates a random car brand. Press any key to
+                        guess a letter</div>
+                    <div class="pcard-footer">
+                        <a class='pcard-link' target='_blank' href='https://github.com/Jwb81/TriviaGame'>View
+                            Github</a>
+                        <a class='pcard-link' target='_blank' href='https://jwb81.github.io/TriviaGame/'>View
+                            Site</a>
+                    </div>
+                </div>
+                <div class="pcard">
+                    <img class="pcard-image" src='../images/portfolio/bike_route_sign.png'>
+                    <div class="pcard-body">Dawn at the riverbed with mountains</div>
+                    <div class="pcard-footer">
+                        <a class='pcard-link' target='_blank' href='https://github.com/Castelobruxo/Lets_Go_Biking'>View
+                            Github</a>
+                        <a class='pcard-link' target='_blank' href='https://castelobruxo.github.io/Lets_Go_Biking/'>View
+                            Site</a>
+                    </div>
+                </div>
+
+            </div>
+            <!-- <div class="info">
+                <span class="first-name">Jason </span>
+                <span class="last-name">Barnett</span>
+                <div class='personal-description'>
+                    I am a: <span class="typewriter"></span><span id='typewriter-underscore' class='invisible'>_</span>
+                </div>
+            </div> -->
+        </div>
+
+    </div>
+
+    <!-- scripts -->
+    <script src='../javascript/bundle.js'></script>
+    <script src='../javascript/index.js'></script>
+
+    <script>
+        // Startup functions
+        screenResized();
+    </script>
+</body>
+
+</html>
