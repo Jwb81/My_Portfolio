@@ -105,3 +105,23 @@ let screenResized = function () {
         document.querySelector('.sidebar-toggle').classList.remove('hide');
     }
 }
+
+let faded = document.querySelectorAll('.pfaded');
+faded.forEach(element => {
+    element.addEventListener('mouseover', listener);
+    element.addEventListener('mouseout', listener);
+})
+
+function listener(event) {
+    switch(event.type) {
+        case 'mouseover':
+            event.srcElement.classList.add('pcard-toggle');
+            // console.log(event.srcElement.childNodes[1]);
+            event.srcElement.childNodes[1].classList.add('hide');
+            break;
+        case 'mouseout':
+            event.srcElement.classList.remove('pcard-toggle');
+            event.srcElement.childNodes[1].classList.remove('hide');
+            break;
+    }
+}
