@@ -8,9 +8,13 @@ let screenLG = 991;
 
 /* Set the width of the side navigation to 250px */
 let openNav = function () {
-    document.getElementById("mySidenav").style.width = "250px";
+
+    // document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("mySidenav").classList.remove('hide');
     if (windowWidth > screenSM) {
-        document.getElementById("main").style.marginLeft = "250px";
+        let width = document.getElementById("mySidenav").offsetWidth;
+        // document.getElementById("main").style.marginLeft = "250px";
+        document.getElementById("main").style.marginLeft = width + 'px';
     } else {
         document.querySelector('.page-background').style.filter = 'blur(4px)';
     }
@@ -19,10 +23,12 @@ let openNav = function () {
 
 /* Set the width of the side navigation to 0 */
 let closeNav = function () {
-    document.getElementById("mySidenav").style.width = "0";
+    // document.getElementById("mySidenav").style.width = "0px";
+    document.getElementById("mySidenav").classList.add('hide');
     if (windowWidth > screenSM) {
-        document.getElementById("main").style.marginLeft = "0";
+
     } else {
+        document.getElementById("main").style.marginLeft = "0px";
         document.querySelector('.page-background').style.filter = 'blur(0px)';
     }
 }
