@@ -10,9 +10,12 @@
     <!-- styles -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:500" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC:400,900" rel="stylesheet">
+    <link rel='stylesheet' href='../css/general.css'>
     <link rel='stylesheet' href='../css/index.css'>
+    <link rel='stylesheet' href='../css/media_queries.css'>
 </head>
 
 <body>
@@ -36,8 +39,8 @@
             </div>
             <div class="contact">
                 <a href='tel:+13307057994'>(330)-705-7994</a>
-                <a href='mailto:jwb81@zips.uakron.edu'>Personal email</a>
-                <a href='mailto:jayb21@neo.rr.com'>School email</a>
+                <a href='mailto:jwb81@zips.uakron.edu'>jwb81@zips.uakron.edu</a>
+                <a href='mailto:jayb21@neo.rr.com'>jayb21@neo.rr.com</a>
 
             </div>
             <div class="copyright">
@@ -47,7 +50,7 @@
     </div>
 
     <!-- page background : absolute positioning -->
-    <div class="page-background" style='transform: blur(5px)'></div>
+    <!-- <div class="page-background" style='transform: blur(5px)'></div> -->
 
     <!-- Use any element to open the sidenav -->
     <span class='sidebar-toggle' onclick="openNav()">|||</span>
@@ -56,8 +59,10 @@
     <div id="main" class='flex-container'>
 
         <div class="flex-item">
+
             <div class="portfolio-cards">
-                <div class="pcard">
+                <h2 class='pheader'>A few of my projects...</h2>
+                <!-- <div class="pcard">
                     <img class="pcard-image" src='../images/portfolio/bartender.jpg'>
                     <div class="pcard-body">This is a private project right now. It uses a web interface to allow users
                         to make drinks on a machine.</div>
@@ -98,48 +103,126 @@
                         <a class='pcard-link' target='_blank' href='https://castelobruxo.github.io/Lets_Go_Biking/'>View
                             Site</a>
                     </div>
-                </div>
+                </div> -->
 
                 <div class="pc">
-                    <img src="../images/portfolio/bartender.jpg" alt="Automated Barender" class="pi">
-                    <div class="pfaded">
-                        <div class="faded-text">
-                            This test should be faded on top of the image
+                    <div class="pc-body">
+                        <img src="../images/portfolio/bartender.jpg" alt="Automated Barender" class="pi">
+                        <div class="pfaded">
+                            <div class="faded-text">
+                                This test should be faded on top of the image
+                            </div>
                         </div>
+                    </div>
+                    <div class="pc-footer">
+                        <a class='pcard-link' target='_blank' href='https://github.com/Castelobruxo/Lets_Go_Biking'>View
+                            Github</a>
+                        <a class='pcard-link' target='_blank' href='https://castelobruxo.github.io/Lets_Go_Biking/'>View
+                            Site</a>
                     </div>
                 </div>
                 <div class="pc">
-                    <img src="../images/portfolio/bartender.jpg" alt="Automated Barender" class="pi">
-                    <div class="pfaded">
-                        <div class="faded-text">
-                            This test should be faded on top of the image
+                    <div class="pc-body">
+                        <img src="../images/portfolio/bartender.jpg" alt="Automated Barender" class="pi">
+                        <div class="pfaded">
+                            <div class="faded-text">
+                                This test should be faded on top of the image
+                            </div>
                         </div>
+                    </div>
+                    <div class="pc-footer">
+                        <a class='pcard-link' target='_blank' href='https://github.com/Castelobruxo/Lets_Go_Biking'>View
+                            Github</a>
+                        <a class='pcard-link' target='_blank' href='https://castelobruxo.github.io/Lets_Go_Biking/'>View
+                            Site</a>
                     </div>
                 </div>
                 <div class="pc">
-                    <img src="../images/portfolio/bartender.jpg" alt="Automated Barender" class="pi">
-                    <div class="pfaded">
-                        <div class="faded-text">
-                            This test should be faded on top of the image
+                    <div class="pc-body">
+                        <img src="../images/portfolio/bartender.jpg" alt="Automated Barender" class="pi">
+                        <div class="pfaded">
+                            <div class="faded-text">
+                                This test should be faded on top of the image
+                            </div>
                         </div>
+                    </div>
+                    <div class="pc-footer">
+                        <a class='pcard-link' target='_blank' href='https://github.com/Castelobruxo/Lets_Go_Biking'>View
+                            Github</a>
+                        <a class='pcard-link' target='_blank' href='https://castelobruxo.github.io/Lets_Go_Biking/'>View
+                            Site</a>
                     </div>
                 </div>
                 <div class="pc">
-                    <img src="../images/portfolio/bartender.jpg" alt="Automated Barender" class="pi">
-                    <div class="pfaded">
-                        <div class="faded-text">
-                            This test should be faded on top of the image
+                    <div class="pc-body">
+                        <img src="../images/portfolio/bartender.jpg" alt="Automated Barender" class="pi">
+                        <div class="pfaded">
+                            <div class="faded-text">
+                                This test should be faded on top of the image
+                            </div>
                         </div>
+                    </div>
+                    <div class="pc-footer">
+                        <a class='pcard-link' target='_blank' href='https://github.com/Castelobruxo/Lets_Go_Biking'>View
+                            Github</a>
+                        <a class='pcard-link' target='_blank' href='https://castelobruxo.github.io/Lets_Go_Biking/'>View
+                            Site</a>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <br>
+            <div >
+                <hr style='width: 2%;'>
+                <hr style='width: 5%;'>
+                <hr style='width: 10%;'>
+                <hr style='width: 15%;'>
+                <hr style='width: 20%;'>
+                <hr style='width: 15%;'>
+                <hr style='width: 10%;'>
+                <hr style='width: 5%;'>
+                <hr style='width: 2%;'>
+            </div>
+
+            <div class="portfolio-cards">
+                <h2 class='pheader'>Passion projects...</h2>
+
+
+                <div class="pc">
+                    <div class="pc-body">
+                        <img src="../images/portfolio/bartender.jpg" alt="Automated Barender" class="pi">
+                        <div class="pfaded">
+                            <div class="faded-text">
+                                This test should be faded on top of the image
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pc-footer">
+                        <a class='pcard-link' target='_blank' href='https://github.com/Castelobruxo/Lets_Go_Biking'>View
+                            Github</a>
+                        <a class='pcard-link' target='_blank' href='https://castelobruxo.github.io/Lets_Go_Biking/'>View
+                            Site</a>
                     </div>
                 </div>
                 <div class="pc">
-                    <img src="../images/portfolio/bartender.jpg" alt="Automated Barender" class="pi">
-                    <div class="pfaded">
-                        <div class="faded-text">
-                            This test should be faded on top of the image
+                    <div class="pc-body">
+                        <img src="../images/portfolio/bartender.jpg" alt="Automated Barender" class="pi">
+                        <div class="pfaded">
+                            <div class="faded-text">
+                                This test should be faded on top of the image
+                            </div>
                         </div>
                     </div>
+                    <div class="pc-footer">
+                        <a class='pcard-link' target='_blank' href='https://github.com/Castelobruxo/Lets_Go_Biking'>View
+                            Github</a>
+                        <a class='pcard-link' target='_blank' href='https://castelobruxo.github.io/Lets_Go_Biking/'>View
+                            Site</a>
+                    </div>
                 </div>
+
 
             </div>
 

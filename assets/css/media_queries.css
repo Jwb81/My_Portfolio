@@ -1,0 +1,86 @@
+
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (min-width: 769px) {
+    .sidenav {
+        width: 250px;
+    }
+    .page-background {
+        /* background-image: url('../images/dawn_river_mountains.jpg'); */
+    }
+}
+
+@media screen and (min-width: 1350px) {
+    .page-background {
+        background-image: url('../images/backgrounds/white_dog_lake_mountains.jpg');
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .portfolio-cards {
+        margin-top: 40px;
+    }
+
+    .sidenav {
+        width: 150px;
+    }
+    #my-pic {
+        content: url('../images/beach_volleyball_small.png');
+    }
+
+    .first-name,
+    .last-name {
+        font-family: 'Playfair Display SC', 'Permanent Marker', serif;
+        font-size: 3em;
+        text-shadow: 3px 3px 5px #333;
+    }
+
+    .personal-description {
+        font-size: 1.5em;
+    }
+
+    /* .page-background {
+        background-image: url('../images/mountains_and_lake.jpg');
+    } */
+}
+
+/* HEIGHT MEDIA QUERIES */
+@media screen and (max-height: 700px) {
+    .sidenav a {
+        font-size: 1em;
+    }
+    .sidenav {
+        width: 175px;
+        /* padding-top: 10px; */
+    }
+    .sidenav-footer {
+        /* margin-bottom: 10px; */
+    }
+    #my-pic {
+        content: url('../images/beach_volleyball_small.png');
+    }
+
+}
+
+@media screen and (max-height: 450px) {
+    #my-pic {
+        display: none;
+    }
+    .contact a,
+    .navlinks a {
+        padding: 5px;
+    }
+    .sidenav a {
+        font-size: 1.2em;
+    }
+    .sidenav {
+        padding-top: 10px
+    }
+    .sidenav-footer {
+        margin-bottom: 10px;
+    }
+}
+
+

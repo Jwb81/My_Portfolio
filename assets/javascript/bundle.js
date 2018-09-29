@@ -16,7 +16,8 @@ let openNav = function () {
         // document.getElementById("main").style.marginLeft = "250px";
         document.getElementById("main").style.marginLeft = width + 'px';
     } else {
-        document.querySelector('.page-background').style.filter = 'blur(4px)';
+        if (document.querySelector('.page-background'))
+            document.querySelector('.page-background').style.filter = 'blur(4px)';
     }
 
 }
@@ -29,7 +30,9 @@ let closeNav = function () {
 
     } else {
         document.getElementById("main").style.marginLeft = "0px";
-        document.querySelector('.page-background').style.filter = 'blur(0px)';
+
+        if (document.querySelector('.page-background'))
+            document.querySelector('.page-background').style.filter = 'blur(0px)';
     }
 }
 
@@ -113,15 +116,16 @@ faded.forEach(element => {
 })
 
 function listener(event) {
-    switch(event.type) {
+    switch (event.type) {
         case 'mouseover':
-            event.srcElement.classList.add('pcard-toggle');
-            // console.log(event.srcElement.childNodes[1]);
-            event.srcElement.childNodes[1].classList.add('hide');
+            // event.srcElement.classList.add('pcard-toggle');
+            // event.srcElement.childNodes[1].classList.add('hide');
+            this.classList.add('pcard-toggle');
+            this.childNodes[1].classList.add('hide');
             break;
         case 'mouseout':
-            event.srcElement.classList.remove('pcard-toggle');
-            event.srcElement.childNodes[1].classList.remove('hide');
+            this.classList.remove('pcard-toggle');
+            this.childNodes[1].classList.remove('hide');
             break;
     }
 }
