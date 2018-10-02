@@ -41,7 +41,7 @@ let sleep = function (ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-let descriptions = ['Web Developer', 'Full Stack Engineer', 'Programmer', 'Traveler'];
+let descriptions = ['Full Stack Developer', 'Programmer', 'Traveler'];
 let typeSpeed = 150; // 100 milliseconds
 let backspaceSpeed = 100;
 let typewriter = document.querySelector('.typewriter');
