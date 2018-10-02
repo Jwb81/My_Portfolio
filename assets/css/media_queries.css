@@ -41,6 +41,14 @@
         font-size: 1.5em;
     }
 
+    .grid-container {
+        grid-template-areas:
+            'header header'
+            'right right'
+            'left left'
+            'footer footer'
+    }
+
     /* .page-background {
         background-image: url('../images/mountains_and_lake.jpg');
     } */

@@ -1,6 +1,230 @@
-Self-driven Full-stack Developer with a background in computer science and web development I have been learning and
-researching different technologies over the past few years and now I want to put that knowledge to work in order to
-create useful web applications that users enjoy working with. I completed the Full-stack Bootcamp through Case Western
-where I advanced my skills in Skill 1, Skill 2, and Skill 3. My experience with core web languages, external libraries,
-and frameworks as well as my ability to quickly learn help me adapt to any work environment making me an excellent
-developer.
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jason Barnett</title>
+
+    <!-- styles -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+    <link rel='stylesheet' href='../css/general.css'>
+    <link rel='stylesheet' href='../css/index.css'>
+    <link rel='stylesheet' href='../css/aboutme_grid.css'>
+    <link rel='stylesheet' href='../css/media_queries.css'>
+</head>
+
+<body>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <!-- <img id='my-pic' src='assets/images/Laura_resized.png'> -->
+        <img id='my-pic' src='../images/beach_volleyball.JPG'>
+        <div class="nav-links">
+            <a href="../../index.html">Home</a>
+            <a href="./aboutme.html">About Me</a>
+            <!-- <a href="#">Resume</a> -->
+            <a href="./portfolio.html">Portfolio</a>
+        </div>
+
+        <div class='sidenav-footer'>
+            <div class="icons">
+                <a class='icons' target='_blank' href='https://github.com/Jwb81'><i class='fab fa-github-square'></i></a>
+                <a class='icons' target='_blank' href='https://www.linkedin.com/in/jason-w-barnett/'><i class='fab fa-linkedin'></i></a>
+                <!-- <a href='https://twitter.com/JBarnett2114'><i class='fab fa-twitter-square'></i></a> -->
+            </div>
+            <div class="contact">
+                <a href='tel:+13307057994'>(330)-705-7994</a>
+                <a href='mailto:jwb81@zips.uakron.edu'>jwb81@zips.uakron.edu</a>
+                <a href='mailto:jayb21@neo.rr.com'>jayb21@neo.rr.com</a>
+
+            </div>
+            <div class="copyright">
+                &copy; Jason Barnett 2018
+            </div>
+        </div>
+    </div>
+
+    <!-- page background : absolute positioning -->
+    <!-- <div class="page-background" style='transform: blur(5px)'></div> -->
+
+    <!-- Use any element to open the sidenav -->
+    <span class='sidebar-toggle' onclick="openNav()">|||</span>
+
+
+    <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+    <div id="main">
+        <div class='grid-container'>
+            <div class="grid-item-header">
+                <h1 style='color: rgb(50, 150, 255);font-family: "Fredoka One", "serif";font-size: 3em;'>A little about
+                    me....</h1>
+
+                <p class='brand-statement'>
+                    Self-driven Full-stack Developer with a background in computer science and web development. I
+                    have been learning and researching different technologies over the past few years and now I want to
+                    put that knowledge
+                    to work in order to create useful web applications that users enjoy working with. I completed the
+                    Full-stack
+                    Bootcamp through Case Western where I advanced my skills in Javascript, CSS, and HTML. My
+                    experience with core web
+                    languages, external libraries, and frameworks as well as my ability to learn quickly help me adapt
+                    to any work environment
+                    making me an excellent developer.
+                </p>
+            </div>
+
+            <!-- left side of the grid -->
+            <div class="grid-item-left">
+                <h1>Connections</h1>
+                <div class='contact-section'>
+                    <h3 style='margin: 0;'><i class='fas fa-map-marker'></i> Local Address</h3>
+                    426 Tyner Street <br />
+                    Akron, OH<br />
+                    44311<br />
+                </div>
+                <div class='contact-section'>
+                    <h3 style='margin: 0;'><i class='fas fa-map-marker'></i> Permanent Address</h3>
+                    <div class="address">
+                        5994 Sunscape Drive NE<br />
+                        Louisville, OH<br />
+                        44641<br />
+                    </div>
+                </div>
+                <div class='contact-section'>
+                    <h4 style='margin-bottom:0px;'>Github:</h4>
+                    <a class='contact-links' target='_blank' href='https://github.com/Jwb81'><i class='fab fa-github-square'></i>
+                        Jwb81</a>
+                    <!-- <br /> -->
+                    <h4 style='margin-bottom:0px;'>LinkedIn</h4>
+                    <a class='contact-links' target='_blank' href='https://www.linkedin.com/in/jason-w-barnett/'><i
+                            class='fab fa-linkedin'></i>
+                        jason-w-barnett</a>
+
+                    <br />
+                    <a class='contact-links' href='tel:+13307057994'><i class='fas fa-phone'></i> (330)-705-7994</a>
+                    <br />
+                    <a class='contact-links' href='mailto:jwb81@zips.uakron.edu'><i class='fas fa-envelope'></i>
+                        jwb81@zips.uakron.edu (school)</a>
+                    <br />
+                    <a class='contact-links' href='mailto:jayb21@neo.rr.com'><i class='fas fa-envelope'></i>
+                        jayb21@neo.rr.com (personal)</a>
+                </div>
+                <div class="contact-section">
+                    <a id='btn-download-resume' href='../docs/Resume_Career_Fair.pdf' download>Download Resume</a>
+                </div>
+            </div>
+
+            <!-- right side of the grid -->
+            <div class="grid-item-right">
+                <div class="grid-info">
+                    <h1>Skills & Tools</h1>
+
+                    <blockquote>
+                        I have experience with: <span class="bold">Javascript</span>, <span class="bold">HTML5</span>,
+                        <span class="bold">CSS3</span>,
+                        NodeJS, jQuery, React, Bootstrap, Mongo, SQL, C++, Java, Python
+                    </blockquote>
+                </div>
+
+                <hr>
+
+                <div class='grid-info'>
+                    <h1>Education</h1>
+
+                    <div>
+                        <span class='bold content-title'>Web Development Bootcamp, Full Stack</span><br />
+                        <div class='section-content'>
+                            Case Western Reserve University, Cleveland, OH
+                        </div>
+                    </div>
+                    <div>
+                        <span class='bold content-title'>Bachelor of Science, CIS Web Development & Programming</span><br />
+                        <div class="section-content">
+
+                            University of Akron, Akron, OH
+                            <ul style='margin-top: 0px;'>
+                                <li>Minor in Computer Science</li>
+                                <li>Graduation: Spring 2019</li>
+                                <li>GPA: 3.845 / 4.0</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <hr>
+
+                <div class='grid-info'>
+                    <h1>Work</h1>
+                    <div>
+                        <span class='bold content-title'>Best Buy</span><br />
+                        <div class="section-content">
+                            <em>Computer Sales Consultant, Inventory Specialist</em> | 2015 - Present <br />
+                            Duties included:
+                            <ul style='margin-top: 0px;'>
+                                <li>Working with a team to maintain organization and inventory integrity</li>
+                                <li>Assist customers with large items after purchase</li>
+                                <li>Unload merchandise from trucks as they arrive</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class='grid-info'>
+                    <h1>The Fun Stuff</h1>
+                    <p>
+                        I have played soccer my entire life and I try to golf whenever I get some free time.
+                        I have a drone that I like to fly and eventually I want to build/program one myself.
+                        I also mess around with raspberry pis and Arduinos whenever I can by writing small Python
+                        scripts NodeJS apps that control GPIO pins or set up small local servers.
+                    </p>
+                </div>
+
+                <hr>
+            </div>
+            <!-- <div class="grid-item-body">
+                <img src="/assets/images/resume.png" alt="Jason Barnett - Resume">
+                <a id='btn-download-resume' href='../docs/Resume_Career_Fair.pdf' download>Download Resume</a>
+            </div> -->
+            <div class="grid-item-footer">
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- scripts -->
+    <script src='../javascript/bundle.js'></script>
+    <script src='../javascript/index.js'></script>
+
+    <script>
+        // Startup functions
+        screenResized();
+
+        // let cards = document.querySelectorAll('.pc');
+        // cards.forEach(x => {
+        //     x.addEventListener('mouseover', cardListener);
+        //     x.addEventListener('mouseout', cardListener);
+        // })
+
+        // function listener(event) {
+        //     switch (event.type) {
+        //         case 'mouseover':
+        //             event.srcElement.classList.add('pcard-toggle');
+        //             break;
+        //         case 'mouseout':
+        //             event.srcElement.classList.remove('pcard-toggle');
+        //             break;
+        //     }
+        // }
+    </script>
+</body>
+
+</html>

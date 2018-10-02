@@ -1,0 +1,126 @@
+.grid-container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 30px;
+
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        'header header'
+        'left right'
+        'footer footer';
+
+}
+
+.grid-item-left,
+.grid-item-right {
+    /* border: 2px solid black; */
+    /* padding: 10px; */
+}
+
+.grid-item-header {
+    grid-area: header;
+    margin-bottom: 20px;
+}
+
+.grid-item-body {
+    grid-area: body;
+
+    position: relative;
+}
+.grid-item-body > img {
+    width: 100%;
+}
+
+.grid-item-left {
+    grid-area: left;
+
+    padding-left: 30px;
+    border-left: 4px solid rgba(68, 83, 150, 0.75);
+
+}
+
+.grid-item-right {
+    grid-area: right;
+
+    padding-left: 30px;
+    border-left: 4px solid rgba(68, 83, 150, 0.75);
+}
+
+.grid-item-footer {
+    grid-area: footer;
+
+    margin-top: 25px;
+    text-align: center;
+}
+
+
+.info-header {
+    text-decoration: underline;
+    font-size: 1.5em;
+}
+
+.brand-statement {
+    font-family: 'Merriweather', 'serif';
+    padding: 20px;
+    
+    font-style: italic;
+    border: 1px solid rgba(100,100,250, 0.4);
+    border-radius: 4px;
+    /* box-shadow: 5px 5px 5px black; */
+    box-shadow: 3px 3px 4px 5px rgba(0,0,0,0.75);
+}
+
+.contact-links,
+.contact-links:active,
+.contact-links:visited {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+.contact-links:hover {
+    text-decoration: underline;
+}
+
+#btn-download-resume,
+#btn-download-resume:active,
+#btn-download-resume:visited {
+    border-radius: 4px;
+    padding: 10px;
+    background-color: #999;
+    color: white;
+    /* position: absolute;
+    bottom: 10px;
+    right: 10px; */
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+    text-decoration: none;
+}
+#btn-download-resume:hover {
+    cursor: pointer;
+    background-color: #777;
+    
+}
+
+.grid-info {
+    margin: 10px;
+}
+
+.grid-info > div {
+    margin: 10px;
+}
+
+.contact-section {
+    margin: 15px auto;
+}
+
+.address {
+    /* padding-left: 20px; */
+}
+
+.section-content {
+    color: #aaa;
+}
+.content-title {
+    font-size: 1.2em;
+}

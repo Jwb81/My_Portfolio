@@ -195,6 +195,12 @@ html {
 .hide {
     display: none;
 }
+.bold {
+    font-weight: bold;
+}
+.text-faded {
+    color: #ccc;
+}
 
 
 
