@@ -26,9 +26,9 @@
     .sidenav {
         width: 150px;
     }
-    #my-pic {
+    /* #my-pic {
         content: url('../images/beach_volleyball_small.png');
-    }
+    } */
 
     .first-name,
     .last-name {
